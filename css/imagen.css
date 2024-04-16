@@ -1,0 +1,19 @@
+/* estilos aplicados a las imagenes del div "fakeimg" la propiedad blur, transition permiten que haya un efecto y cambio estilizado y nada brusco */
+.fakeimg img:hover{
+    filter: blur(5px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* la misma logica aplica para las imagenes de la sección de noticias a las izquierda */
+
+.img1 img:hover{
+    -webkit-transform:scale(1.3);
+    transform:scale(1.3);
+    transition: 0.3s;
+    cursor: pointer;
+}
+/* un agregado a las imagenes de la izquierda es evitar que haya desborde de la imagen dentro del contenedor al aplicar el efecto de aumento de escala al hacer un hover */
+.img1 {
+    overflow: hidden;
+}
